@@ -1,0 +1,35 @@
+{
+    "name": "jr/container-control",
+    "description": "Serves as a container for dynamically registered Nette-powered Controls.",
+    "authors": [
+        {
+            "name": "RebendaJiri",
+            "email": "jiri.rebenda@htmldriven.com"
+        }
+    ],
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4.4",
+		"nette/application": "~2.3.0",
+		"nette/bootstrap": "~2.3.0",
+		"nette/di": "~2.3.0",
+		"nette/utils": "~2.3.0"
+	},
+	"require-dev": {
+		"nette/tester": "~1.5",
+		"tracy/tracy": "~2.3.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"JR\\ContainerControl\\": "src/"
+		},
+		"classmap": [
+			"src/JR/ContainerControl/exceptions.php"
+		]
+	},
+	"autoload-dev": {
+		"psr-0": {
+			"JRTests\\ContainerControl\\": "tests/"
+		}
+	}
+}
